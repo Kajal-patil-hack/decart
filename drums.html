@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitars Page</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+<header>
+    <div class="logo">DEVCART</div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="drums.html">Drums</a></li>
+            <li><a href="pianos.html">Pianos</a></li>
+            <li><a href="home.php">Contact</a></li>
+            <li><a href="#" onclick="showCart()">Cart</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <img src="images/drums1.png" alt="drum 1">
+                <h2>Drum 1</h2>
+                <p>₹5000</p>
+                <button onclick="addToCart('D001','drum 1', 500)">Add to Cart</button>
+            </div>
+            <div class="column">
+                <img src="images/drums2.png" alt="drum 2">
+                <h2>Drum 2</h2>
+                <p>₹6000</p>
+                <button onclick="addToCart('D002','drum 2', 600)">Add to Cart</button>
+            </div>
+            <div class="column">
+                <img src="images/drums3.png" alt="drum 3">
+                <h2>Drum 3</h2>
+                <p>₹7000</p>
+                <button onclick="addToCart('D003','drum 3', 700)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="images/drums4.png"alt="drum 4">
+                <h2>Drum 4</h2>
+                <p>₹8000</p>
+                <button onclick="addToCart('D004','drum 4', 800)">Add to Cart</button>
+            </div>
+            <div class="column">
+                <img src="images/drums5.png" alt="drum  5">
+                <h2>Drum 5</h2>
+                <p>₹9000</p>
+                <button onclick="addToCart('D005','drum 5', 900)">Add to Cart</button>
+            </div>
+            <div class="column">
+                <img src="images/drums6.png" alt="drum 6">
+                <h2>Drum 6</h2>
+                <p>₹10000</p>
+                <button onclick="addToCart('D006','drum 6', 1000)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+	<!-- Cart Modal -->
+	 <div id="cart" class="cart" style="display: none;">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul> <!-- Cart items will be dynamically added here -->
+        <button onclick="closeCart()">Close</button>
+         <button onclick="buyNow()">Buy Now</button>    
+</div>
+	
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitars Page</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+<header>
+    <div class="logo">DEVCART</div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="drums.html">Drums</a></li>
+            <li><a href="pianos.html">Pianos</a></li>
+            <li><a href="home.php">Contact</a></li>
+            <li><a href="#" onclick="showCart()">Cart</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <img src="images/guitar1.jpg.png" alt="Guitar 1">
+                <h2>Guitar 1</h2>
+                <p>₹5000</p>
+                <button onclick="addToCart('G001','Guitar 1', 500)">Add to Cart</button>
+            </div>
+            <div class="column">
+                <img src="images/guitar2.jpg.png" alt="Guitar 2">
+                <h2>Guitar 2</h2>
+                <p>₹6000</p>
+                <button onclick="addToCart('G002','Guitar 2', 600)">Add to Cart</button>
+            </div>
+            <div class="column">
+                <img src="images/guitar3.png" alt="Guitar 3">
+                <h2>Guitar 3</h2>
+                <p>₹7000</p>
+                <button onclick="addToCart('G003','Guitar 3', 700)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="images/guitar4.png"alt="Guitar 4">
+                <h2>Guitar 4</h2>
+                <p>₹8000</p>
+                <button onclick="addToCart('G004','Guitar 4', 800)">Add to Cart</button>
+            </div>
+            <div class="column">
+                <img src="images/guitar5.png" alt="Guitar 5">
+                <h2>Guitar 5</h2>
+                <p>₹9000</p>
+                <button onclick="addToCart('G005','Guitar 5', 900)">Add to Cart</button>
+            </div>
+            <div class="column">
+                <img src="images/guitar6.png" alt="Guitar 6">
+                <h2>Guitar 6</h2>
+                <p>₹10000</p>
+                <button onclick="addToCart('G006','Guitar 6', 1000)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+	<!-- Cart Modal -->
+	 <div id="cart" class="cart" style="display: none;">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul> <!-- Cart items will be dynamically added here -->
+        <button onclick="closeCart()">Close</button>
+ <button onclick="buyNow()">Buy Now</button>
+
+    </div>
+	
+    <script src="script.js"></script>
+</body>
+</html>
